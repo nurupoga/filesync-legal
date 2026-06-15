@@ -30,7 +30,7 @@
   <p>
     FileSync(以下「本アプリ」)は、ユーザーのプライバシーを最重要視しています。
     本プライバシーポリシーは、本アプリがどのような情報をどのように取り扱うかを説明します。
-    本アプリは、複数のクラウドストレージ(Google Drive / Dropbox / Box / pCloud 等)、ネットワークプロトコル経由のサーバー(WebDAV / SFTP / SMB / FTP)、USB ストレージ、端末内ローカルストレージを統合管理するファイルマネージャーです。
+    本アプリは、Google Drive / Dropbox / WebDAV 対応ストレージ(Koofr / pCloud 等)、SFTP / FTP サーバー、USB ストレージ、端末内ローカルストレージを統合管理するファイルマネージャーです。
   </p>
 
   <h2>2. 収集する情報</h2>
@@ -59,7 +59,7 @@
   </p>
   <ul>
     <li>各クラウドサービスの <strong>OAuth アクセストークン / リフレッシュトークン</strong></li>
-    <li>WebDAV / SFTP / SMB / FTP の <strong>接続先情報・認証情報(ユーザー名・パスワード・SSH鍵)</strong></li>
+    <li>WebDAV / SFTP / FTP の <strong>接続先情報・認証情報(ユーザー名・パスワード・SSH鍵)</strong></li>
     <li>ファイル一覧(メタデータ)の一時キャッシュ</li>
     <li>同期設定・表示設定・お気に入り</li>
     <li>バックアップ・転送ジョブの履歴</li>
@@ -70,7 +70,7 @@
 
   <h3>2.4 ユーザー操作により外部送信される情報</h3>
   <p>
-    ユーザーがバックアップ・アップロード・転送機能を使用した場合に限り、対象ファイルがユーザー自身が指定した送信先(クラウドストレージ・SMB / WebDAV / SFTP / FTP サーバー等)へ送信されます。
+    ユーザーがバックアップ・アップロード・転送機能を使用した場合に限り、対象ファイルがユーザー自身が指定した送信先(クラウドストレージ・WebDAV / SFTP / FTP サーバー等)へ送信されます。
     これらは <strong>ユーザーが明示的に選択したサービスとの直接通信</strong>であり、開発者のサーバーを経由しません。
   </p>
 
@@ -81,9 +81,8 @@
   <ul>
     <li>Google Drive(<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google LLC のプライバシーポリシー</a>)</li>
     <li>Dropbox(<a href="https://www.dropbox.com/privacy" target="_blank" rel="noopener">Dropbox のプライバシーポリシー</a>)</li>
-    <li>Box(<a href="https://www.box.com/legal/privacypolicy" target="_blank" rel="noopener">Box のプライバシーポリシー</a>)</li>
     <li>pCloud(<a href="https://www.pcloud.com/help/privacy-policy" target="_blank" rel="noopener">pCloud のプライバシーポリシー</a>)</li>
-    <li>WebDAV / SFTP / SMB / FTP サーバー(ユーザーが指定する任意のサーバー)</li>
+    <li>WebDAV / SFTP / FTP サーバー(ユーザーが指定する任意のサーバー)</li>
   </ul>
   <p>これらのサービスにおけるデータの取り扱いは、それぞれのサービス提供者のプライバシーポリシーに従います。</p>
 
@@ -91,7 +90,7 @@
   <p>本アプリが要求する OS 権限と、その用途は以下のとおりです。各権限は、対応する機能を使用する場合にのみ要求され、機能を使用しない限り収集・利用されません。</p>
   <ul>
     <li><strong>写真ライブラリ</strong>: 写真・動画の自動バックアップ機能のため</li>
-    <li><strong>ローカルネットワーク</strong>: SMB / WebDAV サーバー検出のため</li>
+    <li><strong>ローカルネットワーク</strong>: WebDAV / SFTP / FTP サーバー接続のため</li>
     <li><strong>Face ID / Touch ID / 生体認証</strong>: アプリロック機能のため</li>
     <li><strong>ファイル共有・ドキュメントブラウザ</strong>: ファイルのインポート・エクスポートのため</li>
     <li><strong>バックグラウンド処理</strong>: アプリを閉じている間の転送継続のため</li>
@@ -110,7 +109,7 @@
   <h2>6. セキュリティ</h2>
   <ul>
     <li>認証情報・トークンは iOS Keychain / Android KeyStore に保存され、OS のセキュアエンクレーブで保護されます</li>
-    <li>ネットワーク通信はすべて HTTPS / SMB3 / SSH / TLS 等の暗号化プロトコルを使用します</li>
+    <li>ネットワーク通信はすべて HTTPS / SSH / TLS 等の暗号化プロトコルを使用します</li>
     <li>生体認証(Face ID / Touch ID / 指紋)によるアプリロック機能を提供します</li>
     <li>SFTP は公開鍵認証にも対応します</li>
   </ul>

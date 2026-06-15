@@ -30,7 +30,7 @@
   <p>
     FileSync ("the App") treats user privacy as its highest priority.
     This Privacy Policy describes what information the App handles, and how.
-    The App is a file manager that integrates multiple cloud storage services (Google Drive, Dropbox, Box, pCloud, etc.), network protocols (WebDAV / SFTP / SMB / FTP), USB storage, and on-device local storage in a single interface.
+    The App is a file manager that integrates Google Drive, Dropbox, WebDAV-compatible storage (Koofr, pCloud, and others), SFTP / FTP servers, USB storage, and on-device local storage in a single interface.
   </p>
 
   <h2>2. Information Handled</h2>
@@ -56,7 +56,7 @@
   <p>The following information is stored only on your device. It is never transmitted to the developer's servers.</p>
   <ul>
     <li><strong>OAuth access tokens / refresh tokens</strong> for each cloud service</li>
-    <li><strong>Connection details and credentials</strong> (username, password, SSH key) for WebDAV / SFTP / SMB / FTP</li>
+    <li><strong>Connection details and credentials</strong> (username, password, SSH key) for WebDAV / SFTP / FTP</li>
     <li>Temporary cache of file listings (metadata)</li>
     <li>Sync settings, view preferences, and favorites</li>
     <li>History of backup and transfer jobs</li>
@@ -67,7 +67,7 @@
 
   <h3>2.4 Information transmitted externally by user action</h3>
   <p>
-    When you use backup, upload, or transfer features, target files are sent to the destinations <em>you</em> specify (cloud storage services, SMB / WebDAV / SFTP / FTP servers, etc.).
+    When you use backup, upload, or transfer features, target files are sent to the destinations <em>you</em> specify (cloud storage services, WebDAV / SFTP / FTP servers, etc.).
     These are <strong>direct transmissions to services you have explicitly chosen</strong>; they do not pass through the developer's servers.
   </p>
 
@@ -78,9 +78,8 @@
   <ul>
     <li>Google Drive (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google LLC Privacy Policy</a>)</li>
     <li>Dropbox (<a href="https://www.dropbox.com/privacy" target="_blank" rel="noopener">Dropbox Privacy Policy</a>)</li>
-    <li>Box (<a href="https://www.box.com/legal/privacypolicy" target="_blank" rel="noopener">Box Privacy Policy</a>)</li>
     <li>pCloud (<a href="https://www.pcloud.com/help/privacy-policy" target="_blank" rel="noopener">pCloud Privacy Policy</a>)</li>
-    <li>WebDAV / SFTP / SMB / FTP servers (any server you specify)</li>
+    <li>WebDAV / SFTP / FTP servers (any server you specify)</li>
   </ul>
   <p>Data handling at these services is governed by each provider's privacy policy.</p>
 
@@ -88,7 +87,7 @@
   <p>The App requests the following OS permissions only when you use the corresponding feature:</p>
   <ul>
     <li><strong>Photo library</strong>: for automatic photo/video backup</li>
-    <li><strong>Local network</strong>: for SMB / WebDAV server discovery</li>
+    <li><strong>Local network</strong>: for WebDAV / SFTP / FTP server connections</li>
     <li><strong>Face ID / Touch ID / biometrics</strong>: for the app lock</li>
     <li><strong>File sharing / document browser</strong>: for file import/export</li>
     <li><strong>Background processing</strong>: to continue transfers while the app is closed</li>
@@ -107,7 +106,7 @@
   <h2>6. Security</h2>
   <ul>
     <li>Credentials and tokens are stored in iOS Keychain / Android KeyStore, protected by the OS secure enclave</li>
-    <li>All network communications use encrypted protocols such as HTTPS / SMB3 / SSH / TLS</li>
+    <li>All network communications use encrypted protocols such as HTTPS / SSH / TLS</li>
     <li>The app supports a biometric app lock (Face ID / Touch ID / fingerprint)</li>
     <li>SFTP supports public-key authentication</li>
   </ul>

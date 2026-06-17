@@ -4,61 +4,100 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow">
-<title>FileSync — Legal / 法務情報</title>
+<title>nurupoga — Products & Tools</title>
+<meta name="description" content="nurupoga が制作したアプリ・ツールのポータル。FileSync をはじめ、AI・モバイル・開発支援ツールを公開しています。">
+<link rel="canonical" href="https://nurupoga.net/">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
   <header>
-    <p class="site-title"><a href="./index.html">FileSync</a></p>
-    <nav class="lang-switch" aria-label="Language">
-      <a href="./index.html" class="active">日本語</a>
-      <a href="#en">English</a>
+    <p class="site-title"><a href="./index.html">nurupoga</a></p>
+    <nav class="lang-switch" aria-label="Navigation">
+      <a href="#products" class="active">Products</a>
+      <a href="https://github.com/nurupoga" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
 
-  <h1>FileSync 法務情報</h1>
-  <p class="meta">最終更新日: 2026年5月3日</p>
+  <section class="hero">
+    <h1>nurupoga<br><span class="hero-sub">Products &amp; Tools</span></h1>
+    <p class="hero-lead">
+      アプリ・AI・開発支援ツールを個人で制作しています。<br>
+      公開しているプロダクトの一覧です。
+    </p>
+  </section>
 
-  <p>
-    FileSync は、複数のクラウドストレージ・サーバー・ローカルストレージを統合管理するファイルマネージャーアプリです。
-    本ページでは、本アプリのプライバシーポリシーと利用規約を公開しています。
-  </p>
+  <h2 id="products">主要プロダクト</h2>
 
-  <div class="index-cards">
-    <a class="index-card" href="./privacy.html">
-      <p class="card-title">プライバシーポリシー</p>
-      <p class="card-sub">どのようなデータが扱われるか / 収集はしません</p>
-    </a>
-    <a class="index-card" href="./terms.html">
-      <p class="card-title">利用規約</p>
-      <p class="card-sub">本アプリのご利用にあたっての条件</p>
-    </a>
-  </div>
+  <!-- FileSync: 最優先・大きく扱う -->
+  <a class="product-card product-card-feature" href="./filesync/index.html">
+    <div class="product-badge">Mobile App</div>
+    <p class="product-title">FileSync</p>
+    <p class="product-desc">
+      複数のクラウドストレージ・サーバー・ローカルを 1 つにまとめて管理できるファイルマネージャー。
+      WebDAV / Koofr / Dropbox / Google Drive / Box / OneDrive に対応し、大容量・並列バックアップと暗号化、USB 連携をサポート。
+    </p>
+    <p class="product-links">
+      <span class="product-link-pill">製品ページ →</span>
+    </p>
+  </a>
 
-  <h2 id="en">English</h2>
-  <p>
-    FileSync is a file manager app that unifies multiple cloud storages, servers, and local storage.
-    This page hosts the Privacy Policy and Terms of Service for the app.
-  </p>
+  <h2>ツール / 実験</h2>
+  <div class="product-grid">
 
-  <div class="index-cards">
-    <a class="index-card" href="./privacy_en.html">
-      <p class="card-title">Privacy Policy</p>
-      <p class="card-sub">What data is handled / We do not collect</p>
+    <a class="product-card" href="https://github.com/nurupoga/ClaudeBar" target="_blank" rel="noopener">
+      <div class="product-badge">macOS · Swift</div>
+      <p class="product-title">ClaudeBar</p>
+      <p class="product-desc">
+        AI コーディングアシスタントの使用量をメニューバーから監視する macOS アプリ。Claude / Codex / Antigravity / Gemini のクォータを一目で確認。
+      </p>
+      <p class="product-links"><span class="product-link-pill">GitHub</span><span class="product-link-pill">Web</span></p>
     </a>
-    <a class="index-card" href="./terms_en.html">
-      <p class="card-title">Terms of Service</p>
-      <p class="card-sub">Conditions for using the app</p>
+
+    <a class="product-card" href="https://github.com/nurupoga/zeroclaw" target="_blank" rel="noopener">
+      <div class="product-badge">Rust</div>
+      <p class="product-title">zeroclaw</p>
+      <p class="product-desc">
+        高速・軽量・完全自律の AI アシスタント基盤。どこにでもデプロイでき、構成を自由に差し替え可能。
+      </p>
+      <p class="product-links"><span class="product-link-pill">GitHub</span><span class="product-link-pill">Web</span></p>
     </a>
+
+    <a class="product-card" href="https://github.com/nurupoga/construction-llm-ft" target="_blank" rel="noopener">
+      <div class="product-badge">LLM · Jupyter</div>
+      <p class="product-title">construction-llm-ft</p>
+      <p class="product-desc">
+        建設ドメインに特化した LLM のファインチューニング実験。ドメイン特化モデルの構築プロセスをまとめています。
+      </p>
+      <p class="product-links"><span class="product-link-pill">GitHub</span></p>
+    </a>
+
+    <a class="product-card" href="https://github.com/nurupoga/adbtraffic" target="_blank" rel="noopener">
+      <div class="product-badge">Android · Shell</div>
+      <p class="product-title">adbtraffic</p>
+      <p class="product-desc">
+        adb を使って Android 端末の通信トラフィックを扱う開発支援スクリプト群。
+      </p>
+      <p class="product-links"><span class="product-link-pill">GitHub</span></p>
+    </a>
+
+    <a class="product-card" href="https://github.com/nurupoga/zenn-articles" target="_blank" rel="noopener">
+      <div class="product-badge">Articles</div>
+      <p class="product-title">Zenn Articles</p>
+      <p class="product-desc">
+        技術記事。LLM をスクラッチで作る jp-llm-scratch シリーズなどを公開しています。
+      </p>
+      <p class="product-links"><span class="product-link-pill">GitHub</span></p>
+    </a>
+
   </div>
 
   <footer>
     <p>
-      お問い合わせ: GitHub Issues 経由で受け付けています。<br>
-      Contact: via GitHub Issues.
+      お問い合わせ: 各リポジトリの GitHub Issues 経由で受け付けています。<br>
+      Contact: via GitHub Issues on each repository.
     </p>
-    <p>&copy; 2026 FileSync 開発チーム / FileSync Project</p>
+    <p>&copy; 2026 nurupoga</p>
   </footer>
 </div>
 </body>
